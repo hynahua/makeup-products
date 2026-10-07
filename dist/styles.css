@@ -3,3 +3,75 @@
 @media(max-width:900px){.desktop-nav{display:none}.site-header{grid-template-columns:1fr auto}.menu-button{display:block}.hero{grid-template-columns:1fr}.hero-copy{padding:90px 7vw 70px}.hero-art{min-height:620px}.hero h1{font-size:clamp(65px,15vw,104px)}.scroll-cue{display:none}.product-grid{grid-template-columns:repeat(2,1fr)}.product-visual{height:60vw}.editorial{grid-template-columns:1fr}.editorial-photo{min-height:650px}.editorial-copy{padding:90px 7vw}.routine{grid-template-columns:1fr;gap:65px}.section-heading{align-items:start;gap:20px;flex-direction:column}}
 @media(max-width:560px){.announcement{font-size:8px}.site-header{height:70px;padding:0 20px}.search-button{display:none}.header-actions{gap:5px}.hero-copy{padding:65px 24px}.hero-text{font-size:13px}.hero-actions{align-items:flex-start;flex-direction:column}.hero-art{min-height:540px}.sun-disc{width:95vw;height:95vw}.foundation{left:15%;top:32%;transform:scale(.82) rotate(-8deg)}.lipstick{right:14%;top:42%;transform:scale(.82) rotate(12deg)}.compact{width:165px;height:165px}.shop-section{padding:80px 20px}.section-heading>p{font-size:12px}.product-grid{grid-template-columns:1fr;gap:38px}.product-visual{height:115vw;max-height:500px}.filters{overflow:auto;padding-bottom:5px}.quick-add{bottom:12px}.editorial-photo{min-height:530px}.editorial-copy{padding:75px 24px}.routine{padding:80px 24px}.steps li{grid-template-columns:40px 1fr}.steps li>b{display:none}.newsletter{padding:90px 24px}footer{grid-template-columns:1fr;gap:25px}footer small{grid-column:1}.modal{grid-template-columns:1fr;padding:18px;gap:22px}.modal-swatch{height:220px}.modal h2{font-size:38px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee div{animation:none}*{transition:none!important}}
+
+/* AI-generated product photography and product carousels */
+.hero-art>img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center}
+.hero-note{z-index:3;background:rgba(251,248,241,.82);backdrop-filter:blur(8px);padding:10px 12px}
+.product-visual.carousel{display:block;background:#eee8df;outline-offset:3px}
+.carousel-track,.carousel-slide{position:absolute;inset:0}
+.carousel-slide{margin:0;opacity:0;visibility:hidden;transition:opacity .35s}
+.carousel-slide.active{opacity:1;visibility:visible}
+.carousel-slide img{width:100%;height:100%;display:block;object-fit:cover}
+.carousel-slide figcaption{position:absolute;left:16px;bottom:16px;z-index:3;background:rgba(251,248,241,.86);backdrop-filter:blur(8px);padding:7px 10px;text-transform:uppercase;letter-spacing:.12em;font-size:8px}
+.carousel .badge{z-index:5}
+.carousel .heart{z-index:5;width:38px;height:38px;border-radius:50%;background:rgba(251,248,241,.86)}
+.carousel .quick-add{z-index:6}
+.carousel-arrow{position:absolute;top:50%;z-index:5;transform:translateY(-50%);width:38px;height:38px;border:1px solid rgba(23,23,20,.12);border-radius:50%;background:rgba(251,248,241,.88);font-size:15px;opacity:0;transition:opacity .2s,background .2s}
+.carousel-arrow:hover{background:#fff}
+.carousel-arrow.prev{left:12px}
+.carousel-arrow.next{right:12px}
+.carousel:hover .carousel-arrow,.carousel:focus-within .carousel-arrow{opacity:1}
+.carousel-dots{position:absolute;z-index:6;left:50%;bottom:19px;transform:translateX(-50%);display:flex;gap:7px}
+.carousel-dots button{width:7px;height:7px;padding:0;border:1px solid var(--ink);border-radius:50%;background:rgba(251,248,241,.8)}
+.carousel-dots button.active{background:var(--ink)}
+.product-info{gap:12px}
+.product-info .product-brand{font-size:8px;font-weight:600;letter-spacing:.16em;opacity:1}
+.product-info strong{white-space:nowrap}
+.modal-swatch{overflow:hidden}
+.modal-product-image{width:100%;height:100%;display:block;object-fit:cover}
+@media(max-width:560px){.carousel-arrow{opacity:1}.carousel-dots{bottom:69px}.carousel-slide figcaption{bottom:66px}}
+
+/* Collins Street boutique */
+.store-location{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(360px,.7fr);min-height:720px;background:#201a18;color:#fff}
+.location-map{position:relative;min-height:620px;overflow:hidden;background:#efe5d7}
+.location-map:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.location-map img{width:100%;height:100%;display:block;object-fit:cover}
+.map-edition{position:absolute;left:26px;bottom:24px;padding:10px 13px;background:rgba(32,26,24,.88);backdrop-filter:blur(8px);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.location-copy{padding:9vw 6vw;display:flex;flex-direction:column;justify-content:center}
+.location-copy h2{margin:0;font:400 clamp(56px,5.8vw,94px)/.9 "Italiana",serif;letter-spacing:-.035em}
+.location-copy h2 em{font-style:italic;color:#e7b2ad}
+.location-intro{max-width:430px;margin:34px 0 38px;color:rgba(255,255,255,.7);font-size:14px;line-height:1.75}
+.location-copy address{padding:24px 0 28px;border-top:1px solid rgba(255,255,255,.22);font-style:normal;font-size:13px;line-height:1.8;color:rgba(255,255,255,.72)}
+.location-copy address span{display:block;margin-bottom:8px;color:#fff;font:24px "Italiana",serif}
+.location-copy .directions-link{align-self:flex-start;background:#fff;color:var(--ink);border-color:#fff}
+.location-copy .directions-link:hover{background:var(--pink);border-color:var(--pink)}
+@media(max-width:900px){.store-location{grid-template-columns:1fr}.location-map{min-height:520px}.location-copy{padding:90px 7vw}}
+@media(max-width:560px){.location-map{min-height:420px}.location-map img{object-position:54% center}.map-edition{left:16px;bottom:16px}.location-copy{padding:75px 24px}.location-copy h2{font-size:58px}}
+
+/* Six-product new-season edit */
+.product-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:42px 18px}
+.product-visual{height:min(42vw,560px);max-height:560px}
+@media(max-width:900px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-visual{height:60vw}}
+@media(max-width:560px){.product-grid{grid-template-columns:1fr}.product-visual{height:115vw}}
+
+/* Real-person new-arrival campaign */
+.campaign-edit{padding:112px 4vw 120px;background:#221d1b;color:#fff}
+.campaign-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:44px}
+.campaign-heading h2{margin:0;font:400 clamp(58px,6vw,94px)/.9 "Italiana",serif;letter-spacing:-.035em}
+.campaign-heading h2 em{font-style:italic;color:#e6b5af}
+.campaign-heading>p{max-width:350px;margin:0 0 7px;color:rgba(255,255,255,.64);font-size:13px;line-height:1.7}
+.campaign-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.campaign-card{position:relative;min-height:700px;overflow:hidden;background:#bda39d}
+.campaign-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.campaign-card:hover img{transform:scale(1.025)}
+.campaign-card:after{content:"";position:absolute;inset:36% 0 0;background:linear-gradient(180deg,transparent,rgba(14,11,10,.86))}
+.campaign-copy{position:absolute;z-index:2;left:28px;right:28px;bottom:28px}
+.campaign-number{margin:0 0 13px!important;font-size:9px!important;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.campaign-copy h3{margin:0 0 8px;font:36px/1 "Italiana",serif}
+.campaign-copy>p{margin:0 0 7px;font-size:10px;letter-spacing:.11em;text-transform:uppercase}
+.campaign-copy>span{display:block;margin-bottom:20px;font-size:12px;color:rgba(255,255,255,.72)}
+.campaign-copy a{display:flex;justify-content:space-between;align-items:center;padding-top:15px;border-top:1px solid rgba(255,255,255,.45);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.campaign-copy a b{font-size:14px;font-weight:400}
+.campaign-card:focus-within{outline:2px solid #fff;outline-offset:3px}
+@media(max-width:900px){.campaign-edit{padding:90px 7vw}.campaign-heading{align-items:start;flex-direction:column}.campaign-grid{grid-template-columns:1fr 1fr}.campaign-card{min-height:650px}.campaign-card:first-child{grid-column:1/-1}.campaign-card:first-child img{object-position:center 28%}}
+@media(max-width:560px){.campaign-edit{padding:76px 20px}.campaign-heading{margin-bottom:30px}.campaign-heading h2{font-size:58px}.campaign-grid{grid-template-columns:1fr;gap:14px}.campaign-card,.campaign-card:first-child{grid-column:auto;min-height:132vw}.campaign-copy{left:20px;right:20px;bottom:22px}.campaign-copy h3{font-size:31px}}

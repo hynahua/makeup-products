@@ -20,11 +20,36 @@ document.querySelectorAll('.quick-add').forEach(button=>button.addEventListener(
   event.stopPropagation();addToBag();
 }));
 
+document.querySelectorAll('.carousel').forEach(carousel=>{
+  const slides=[...carousel.querySelectorAll('.carousel-slide')];
+  const dots=[...carousel.querySelectorAll('.carousel-dots button')];
+  let index=0;
+  const show=nextIndex=>{
+    index=(nextIndex+slides.length)%slides.length;
+    slides.forEach((slide,i)=>slide.classList.toggle('active',i===index));
+    dots.forEach((dot,i)=>{
+      dot.classList.toggle('active',i===index);
+      dot.setAttribute('aria-current',i===index?'true':'false');
+    });
+  };
+  carousel.querySelector('.prev').addEventListener('click',event=>{event.stopPropagation();show(index-1)});
+  carousel.querySelector('.next').addEventListener('click',event=>{event.stopPropagation();show(index+1)});
+  dots.forEach((dot,i)=>dot.addEventListener('click',event=>{event.stopPropagation();show(i)}));
+  carousel.addEventListener('keydown',event=>{
+    if(event.key==='ArrowLeft'){event.preventDefault();show(index-1)}
+    if(event.key==='ArrowRight'){event.preventDefault();show(index+1)}
+  });
+  show(0);
+});
+
 const openModal=card=>{
   modal.querySelector('#modal-title').textContent=card.dataset.name;
   modal.querySelector('.modal-price').textContent=card.dataset.price;
   modal.querySelector('.modal-description').textContent=card.dataset.description;
   modal.querySelector('.modal-swatch').style.background=card.dataset.colour;
+  const modalImage=modal.querySelector('.modal-product-image');
+  modalImage.src=card.dataset.modalImage;
+  modalImage.alt=card.dataset.name;
   modal.hidden=false;overlay.hidden=false;document.body.style.overflow='hidden';modal.querySelector('.modal-close').focus();
 };
 const closeModal=()=>{modal.hidden=true;overlay.hidden=true;document.body.style.overflow=''};

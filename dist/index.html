@@ -15,7 +15,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Veloura home">VELOURA</a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#shop">Shop</a><a href="#new">New in</a><a href="#routine">Routine</a><a href="#about">Our story</a>
+      <a href="#shop">Shop</a><a href="#new">New in</a><a href="#routine">Routine</a><a href="#location">Visit us</a>
     </nav>
     <div class="header-actions">
       <button class="icon-button search-button" aria-label="Search products">
@@ -41,18 +41,9 @@
           <button class="text-link open-finder">Find your shade <span>→</span></button>
         </div>
       </div>
-      <div class="hero-art" role="img" aria-label="Sculptural arrangement of Veloura lipstick, foundation, and blush products">
-        <div class="sun-disc"></div>
-        <div class="hero-note">01 — 04<br><span>THE ESSENTIALS</span></div>
-        <div class="product-shape foundation">
-          <span class="cap"></span><span class="bottle-label">VELOURA<small>SECOND SKIN</small></span>
-        </div>
-        <div class="product-shape lipstick">
-          <span class="lip-colour"></span><span class="lip-case"><b>V</b></span>
-        </div>
-        <div class="product-shape compact"><span>V</span></div>
-        <div class="shade-swipe"></div>
-        <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+      <div class="hero-art">
+        <img src="assets/products/hero-luxury-edit-v2.png" alt="Six new-season luxury makeup products from Chanel, YSL, Dior, Guerlain, Givenchy and Lancôme" fetchpriority="high">
+        <div class="hero-note">01 — 06<br><span>THE NEW EDIT</span></div>
       </div>
       <a class="scroll-cue" href="#shop">Scroll to discover <span>↓</span></a>
     </section>
@@ -63,73 +54,108 @@
 
     <section class="shop-section" id="shop" aria-labelledby="shop-title">
       <div class="section-heading">
-        <div><p class="eyebrow">Curated for you</p><h2 id="shop-title">Meet the icons</h2></div>
-        <p>Four essentials. Endless possibilities. Build a look that feels unmistakably yours.</p>
+        <div><p class="eyebrow">The latest arrivals</p><h2 id="shop-title">The new luxury edit</h2></div>
+        <p>Six new-season essentials from the maisons defining modern luxury beauty.</p>
       </div>
       <div class="filters" role="group" aria-label="Filter products">
         <button class="filter active" data-filter="all">All</button>
         <button class="filter" data-filter="face">Face</button>
         <button class="filter" data-filter="lips">Lips</button>
-        <button class="filter" data-filter="eyes">Eyes</button>
       </div>
 
       <div class="product-grid">
-        <article class="product-card" data-category="face" data-name="Second Skin Tint" data-price="$42" data-description="A breathable, buildable tint with a natural satin finish." data-colour="#d6a07c">
-          <div class="product-visual visual-sand">
-            <span class="badge">Bestseller</span><button class="heart" aria-label="Save Second Skin Tint">♡</button>
-            <div class="mini-product bottle"><i></i><b>V</b><small>SECOND SKIN</small></div>
-            <button class="quick-add">Quick add</button>
-          </div>
-          <div class="product-info"><div><h3>Second Skin Tint</h3><p>12 flexible shades</p></div><strong>$42</strong></div>
+        <article class="product-card" id="product-chanel-gloss" data-category="lips" data-name="Chanel Rouge Coco Hydra Gloss" data-price="A$65" data-description="A hydrating, smoothing high-shine gloss from the new Coco Mademoiselle makeup collection." data-colour="#d98f9b" data-modal-image="assets/products/latest/chanel-hydra-gloss-open.png">
+          <div class="product-visual carousel" aria-label="Chanel Rouge Coco Hydra Gloss product gallery" tabindex="0"><span class="badge">New</span><button class="heart" aria-label="Save Chanel Rouge Coco Hydra Gloss">♡</button><div class="carousel-track"><figure class="carousel-slide active"><img src="assets/products/latest/chanel-hydra-gloss-box.png" alt="Chanel Rouge Coco Hydra Gloss with outer box"><figcaption>Outer box</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/chanel-hydra-gloss-open.png" alt="Chanel Rouge Coco Hydra Gloss with applicator" loading="lazy"><figcaption>Inside</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/chanel-hydra-gloss-shades.png" alt="Chanel Rouge Coco Hydra Gloss shade swatches" loading="lazy"><figcaption>Shade range</figcaption></figure></div><button class="carousel-arrow prev" aria-label="Previous image">←</button><button class="carousel-arrow next" aria-label="Next image">→</button><div class="carousel-dots" aria-label="Choose image"><button class="active" aria-label="Show outer box"></button><button aria-label="Show inside"></button><button aria-label="Show shade range"></button></div><button class="quick-add">Quick add</button></div>
+          <div class="product-info"><div><p class="product-brand">CHANEL</p><h3>Rouge Coco Hydra Gloss</h3><p>438 Charms · New collection</p></div><strong>A$65</strong></div>
         </article>
-        <article class="product-card" data-category="lips" data-name="Soft Focus Lip" data-price="$28" data-description="A soft-matte lipstick with diffused colour and all-day comfort." data-colour="#9f2f36">
-          <div class="product-visual visual-rose">
-            <span class="badge">New</span><button class="heart" aria-label="Save Soft Focus Lip">♡</button>
-            <div class="mini-product lip"><i></i><b>V</b></div>
-            <button class="quick-add">Quick add</button>
-          </div>
-          <div class="product-info"><div><h3>Soft Focus Lip</h3><p>8 statement shades</p></div><strong>$28</strong></div>
+        <article class="product-card" data-category="lips" data-name="YSL Lovenude Kiss Shaper" data-price="A$52" data-description="A creamy multi-use nude liner that shapes, sculpts, blurs and smudges in one glide." data-colour="#a96f5d" data-modal-image="assets/products/latest/ysl-lovenude-open.png">
+          <div class="product-visual carousel" aria-label="YSL Lovenude Kiss Shaper product gallery" tabindex="0"><span class="badge">New</span><button class="heart" aria-label="Save YSL Lovenude Kiss Shaper">♡</button><div class="carousel-track"><figure class="carousel-slide active"><img src="assets/products/latest/ysl-lovenude-box.png" alt="YSL Lovenude Kiss Shaper with outer box"><figcaption>Outer box</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/ysl-lovenude-open.png" alt="YSL Lovenude Kiss Shaper opened to show the liner tip" loading="lazy"><figcaption>Inside</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/ysl-lovenude-shades.png" alt="YSL Lovenude Kiss Shaper nude shade swatches" loading="lazy"><figcaption>Shade range</figcaption></figure></div><button class="carousel-arrow prev" aria-label="Previous image">←</button><button class="carousel-arrow next" aria-label="Next image">→</button><div class="carousel-dots" aria-label="Choose image"><button class="active" aria-label="Show outer box"></button><button aria-label="Show inside"></button><button aria-label="Show shade range"></button></div><button class="quick-add">Quick add</button></div>
+          <div class="product-info"><div><p class="product-brand">YSL</p><h3>Lovenude Kiss Shaper</h3><p>11 sculpting nude shades</p></div><strong>A$52</strong></div>
         </article>
-        <article class="product-card" data-category="face" data-name="Cloud Cheek" data-price="$34" data-description="A silky cream blush that melts into skin for a fresh flush." data-colour="#d47271">
-          <div class="product-visual visual-pink">
-            <button class="heart" aria-label="Save Cloud Cheek">♡</button>
-            <div class="mini-product powder"><i>V</i></div>
-            <button class="quick-add">Quick add</button>
-          </div>
-          <div class="product-info"><div><h3>Cloud Cheek</h3><p>6 soft-flush shades</p></div><strong>$34</strong></div>
+        <article class="product-card" data-category="lips" data-name="Dior Addict Glass Lipstick" data-price="A$72" data-description="Dior's first gloss stick, combining ultra-shine colour with a hydrating melting texture." data-colour="#8e405b" data-modal-image="assets/products/latest/dior-glass-open.png">
+          <div class="product-visual carousel" aria-label="Dior Addict Glass Lipstick product gallery" tabindex="0"><span class="badge">Fall 2026</span><button class="heart" aria-label="Save Dior Addict Glass Lipstick">♡</button><div class="carousel-track"><figure class="carousel-slide active"><img src="assets/products/latest/dior-glass-box.png" alt="Dior Addict Glass Lipstick with outer box"><figcaption>Outer box</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/dior-glass-open.png" alt="Dior Addict Glass Lipstick opened to show the gloss bullet" loading="lazy"><figcaption>Inside</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/dior-glass-shades.png" alt="Dior Addict Glass Lipstick shade swatches" loading="lazy"><figcaption>Shade range</figcaption></figure></div><button class="carousel-arrow prev" aria-label="Previous image">←</button><button class="carousel-arrow next" aria-label="Next image">→</button><div class="carousel-dots" aria-label="Choose image"><button class="active" aria-label="Show outer box"></button><button aria-label="Show inside"></button><button aria-label="Show shade range"></button></div><button class="quick-add">Quick add</button></div>
+          <div class="product-info"><div><p class="product-brand">DIOR</p><h3>Addict Glass Lipstick</h3><p>16 ultra-shine shades</p></div><strong>A$72</strong></div>
         </article>
-        <article class="product-card" data-category="eyes" data-name="Infinite Lash" data-price="$30" data-description="A clean-lift mascara for weightless length and defined volume." data-colour="#20201e">
-          <div class="product-visual visual-blue">
-            <button class="heart" aria-label="Save Infinite Lash">♡</button>
-            <div class="mini-product mascara"><i></i><b>VELOURA</b></div>
-            <button class="quick-add">Quick add</button>
-          </div>
-          <div class="product-info"><div><h3>Infinite Lash</h3><p>Clean lift mascara</p></div><strong>$30</strong></div>
+        <article class="product-card" data-category="face" data-name="Guerlain Météorites Compact" data-price="A$115" data-description="A new mattifying and setting pressed powder with a multidimensional soft-matte finish." data-colour="#eadbd4" data-modal-image="assets/products/latest/guerlain-meteorites-open.png">
+          <div class="product-visual carousel" aria-label="Guerlain Météorites Compact product gallery" tabindex="0"><span class="badge">New</span><button class="heart" aria-label="Save Guerlain Météorites Compact">♡</button><div class="carousel-track"><figure class="carousel-slide active"><img src="assets/products/latest/guerlain-meteorites-box.png" alt="Guerlain Météorites Compact with outer box"><figcaption>Outer box</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/guerlain-meteorites-open.png" alt="Guerlain Météorites Compact opened to show pressed powder and mirror" loading="lazy"><figcaption>Inside</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/guerlain-meteorites-shades.png" alt="Guerlain Météorites Compact powder shades" loading="lazy"><figcaption>Shade range</figcaption></figure></div><button class="carousel-arrow prev" aria-label="Previous image">←</button><button class="carousel-arrow next" aria-label="Next image">→</button><div class="carousel-dots" aria-label="Choose image"><button class="active" aria-label="Show outer box"></button><button aria-label="Show inside"></button><button aria-label="Show shade range"></button></div><button class="quick-add">Quick add</button></div>
+          <div class="product-info"><div><p class="product-brand">GUERLAIN</p><h3>Météorites Compact</h3><p>4 correcting harmonies</p></div><strong>A$115</strong></div>
+        </article>
+        <article class="product-card" id="product-givenchy-primer" data-category="face" data-name="Givenchy Prisme Libre Skin & Color Serum Primer" data-price="A$92" data-description="A serum-infused primer that blurs, hydrates and colour-corrects in three targeted shades." data-colour="#c6d4b4" data-modal-image="assets/products/latest/givenchy-primer-open.png">
+          <div class="product-visual carousel" aria-label="Givenchy Prisme Libre Serum Primer product gallery" tabindex="0"><span class="badge">New</span><button class="heart" aria-label="Save Givenchy Prisme Libre Serum Primer">♡</button><div class="carousel-track"><figure class="carousel-slide active"><img src="assets/products/latest/givenchy-primer-box.png" alt="Givenchy Prisme Libre Serum Primer with outer box"><figcaption>Outer box</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/givenchy-primer-open.png" alt="Givenchy Prisme Libre Serum Primer opened with pump" loading="lazy"><figcaption>Inside</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/givenchy-primer-shades.png" alt="Givenchy Prisme Libre Serum Primer corrective shades" loading="lazy"><figcaption>Shade range</figcaption></figure></div><button class="carousel-arrow prev" aria-label="Previous image">←</button><button class="carousel-arrow next" aria-label="Next image">→</button><div class="carousel-dots" aria-label="Choose image"><button class="active" aria-label="Show outer box"></button><button aria-label="Show inside"></button><button aria-label="Show shade range"></button></div><button class="quick-add">Quick add</button></div>
+          <div class="product-info"><div><p class="product-brand">GIVENCHY</p><h3>Prisme Libre Serum Primer</h3><p>3 corrective shades</p></div><strong>A$92</strong></div>
+        </article>
+        <article class="product-card" id="product-lancome-cheeks" data-category="face" data-name="Lancôme Skin Idôle Juicy Tubes Cheeks" data-price="A$39" data-description="A buildable tint-and-glow cheek highlighter with a juicy, luminous finish." data-colour="#d98c97" data-modal-image="assets/products/latest/lancome-cheeks-open.png">
+          <div class="product-visual carousel" aria-label="Lancôme Skin Idôle Juicy Tubes Cheeks product gallery" tabindex="0"><span class="badge">New</span><button class="heart" aria-label="Save Lancôme Skin Idôle Juicy Tubes Cheeks">♡</button><div class="carousel-track"><figure class="carousel-slide active"><img src="assets/products/latest/lancome-cheeks-box.png" alt="Lancôme Skin Idôle Juicy Tubes Cheeks with outer box"><figcaption>Outer box</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/lancome-cheeks-open.png" alt="Lancôme Skin Idôle Juicy Tubes Cheeks opened with applicator" loading="lazy"><figcaption>Inside</figcaption></figure><figure class="carousel-slide"><img src="assets/products/latest/lancome-cheeks-shades.png" alt="Lancôme Skin Idôle Juicy Tubes Cheeks shades" loading="lazy"><figcaption>Shade range</figcaption></figure></div><button class="carousel-arrow prev" aria-label="Previous image">←</button><button class="carousel-arrow next" aria-label="Next image">→</button><div class="carousel-dots" aria-label="Choose image"><button class="active" aria-label="Show outer box"></button><button aria-label="Show inside"></button><button aria-label="Show shade range"></button></div><button class="quick-add">Quick add</button></div>
+          <div class="product-info"><div><p class="product-brand">LANCÔME</p><h3>Skin Idôle Juicy Tubes Cheeks</h3><p>3 luminous shades</p></div><strong>A$39</strong></div>
         </article>
       </div>
     </section>
 
-    <section class="editorial" id="new">
-      <div class="editorial-photo">
-        <div class="portrait-shape"><span class="eye"></span><span class="brow"></span><span class="lips-art"></span></div>
-        <p>COLOUR<br>LOOK 02</p>
-      </div>
-      <div class="editorial-copy">
-        <p class="eyebrow">The colour story</p>
-        <h2>Your face is<br><em>the canvas.</em></h2>
-        <p>There are no wrong shades, no reserved looks, no rules. Layer textures, blur the edges, and wear colour exactly the way you want to.</p>
-        <a class="button button-light" href="#shop">Explore colour <span>↗</span></a>
-        <div class="quote">“Beauty should feel like freedom.”<span>— The Veloura philosophy</span></div>
+    <section class="campaign-edit" id="new" aria-labelledby="campaign-title">
+      <header class="campaign-heading">
+        <div><p class="eyebrow">Real looks · New arrivals</p><h2 id="campaign-title">Wear what’s <em>new.</em></h2></div>
+        <p>Three effortless looks, paired with this season’s most-wanted beauty.</p>
+      </header>
+      <div class="campaign-grid">
+        <article class="campaign-card campaign-rose">
+          <img src="assets/campaign/chanel-glass-lip-look.png" alt="Model wearing a glossy rose lip and holding Chanel Rouge Coco Hydra Gloss" loading="lazy">
+          <div class="campaign-copy">
+            <p class="campaign-number">Look 01 · Lips</p>
+            <h3>Glass-lip glow</h3>
+            <p>CHANEL Rouge Coco Hydra Gloss</p>
+            <span>Hydrating shine in one swipe.</span>
+            <a href="#product-chanel-gloss">Shop the gloss <b>↗</b></a>
+          </div>
+        </article>
+        <article class="campaign-card campaign-mint">
+          <img src="assets/campaign/givenchy-soft-focus-look.png" alt="Model with a luminous soft-focus complexion beside Givenchy Prisme Libre Serum Primer" loading="lazy">
+          <div class="campaign-copy">
+            <p class="campaign-number">Look 02 · Complexion</p>
+            <h3>Soft-focus skin</h3>
+            <p>GIVENCHY Prisme Libre Serum Primer</p>
+            <span>Correct. Blur. Glow.</span>
+            <a href="#product-givenchy-primer">Shop the primer <b>↗</b></a>
+          </div>
+        </article>
+        <article class="campaign-card campaign-gold">
+          <img src="assets/campaign/lancome-fresh-cheek-look.png" alt="Model in a white suit with a fresh rosy glow beside Lancôme Juicy Tubes Cheeks" loading="lazy">
+          <div class="campaign-copy">
+            <p class="campaign-number">Look 03 · Cheeks</p>
+            <h3>Fresh cheek energy</h3>
+            <p>LANCÔME Skin Idôle Juicy Tubes Cheeks</p>
+            <span>Tap on. Blend out. Glow.</span>
+            <a href="#product-lancome-cheeks">Shop the glow <b>↗</b></a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="routine" id="routine" aria-labelledby="routine-title">
       <div class="routine-intro"><p class="eyebrow">Three steps. Five minutes.</p><h2 id="routine-title">The everyday<br><em>edit.</em></h2></div>
       <ol class="steps">
-        <li><span>01</span><div><h3>Even the canvas</h3><p>Blend Second Skin Tint from the centre of the face outwards.</p></div><b>2 min</b></li>
-        <li><span>02</span><div><h3>Add a little life</h3><p>Tap Cloud Cheek onto the apples and sweep toward the temples.</p></div><b>1 min</b></li>
-        <li><span>03</span><div><h3>Make it yours</h3><p>Finish with Infinite Lash and a blurred layer of Soft Focus Lip.</p></div><b>2 min</b></li>
+        <li><span>01</span><div><h3>Perfect the canvas</h3><p>Prep and colour-correct with Givenchy Prisme Libre Serum Primer.</p></div><b>2 min</b></li>
+        <li><span>02</span><div><h3>Build the glow</h3><p>Tap Lancôme Skin Idôle Juicy Tubes Cheeks high on the cheekbones.</p></div><b>1 min</b></li>
+        <li><span>03</span><div><h3>Finish with shine</h3><p>Shape with YSL Lovenude, then layer Chanel Hydra Gloss or Dior Addict Glass.</p></div><b>2 min</b></li>
       </ol>
+    </section>
+
+    <section class="store-location" id="location" aria-labelledby="location-title">
+      <div class="location-map">
+        <img src="assets/store/veloura-collins-street-map.png" alt="Illustrated map showing Veloura at 101 Collins Street near Exhibition Street and Treasury Gardens in Melbourne" loading="lazy">
+        <span class="map-edition">Melbourne · Boutique No. 01</span>
+      </div>
+      <div class="location-copy">
+        <p class="eyebrow">Our Melbourne boutique</p>
+        <h2 id="location-title">Meet us on<br><em>Collins Street.</em></h2>
+        <p class="location-intro">Discover the collection in person, explore every shade, and find the pieces that feel unmistakably yours.</p>
+        <address>
+          <span>Veloura Melbourne</span>
+          101 Collins Street<br>
+          Melbourne VIC 3000<br>
+          Australia
+        </address>
+        <a class="button button-dark directions-link" href="https://www.google.com/maps/search/?api=1&amp;query=101+Collins+Street+Melbourne+VIC+3000" target="_blank" rel="noopener">View directions <span>↗</span></a>
+      </div>
     </section>
 
     <section class="newsletter" id="about">
@@ -141,11 +167,11 @@
     </section>
   </main>
 
-  <footer><a class="brand" href="#top">VELOURA</a><p>Makeup for every version of you.</p><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Contact</a></div><small>© 2026 Veloura Beauty</small></footer>
+  <footer><a class="brand" href="#top">VELOURA</a><p>Makeup for every version of you.</p><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#location">101 Collins Street, Melbourne</a></div><small>© 2026 Veloura Beauty · Melbourne VIC 3000</small></footer>
 
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
     <button class="modal-close" aria-label="Close">×</button>
-    <div class="modal-swatch"></div>
+    <div class="modal-swatch"><img alt="" class="modal-product-image"></div>
     <div><p class="eyebrow">Your selected essential</p><h2 id="modal-title"></h2><p class="modal-description"></p><strong class="modal-price"></strong><button class="button button-dark add-to-bag">Add to bag</button></div>
   </div>
   <div class="overlay" hidden></div>
