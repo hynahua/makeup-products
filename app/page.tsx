@@ -33,17 +33,42 @@ export default function Home() {
 
         <ProductCollection />
 
-        <section className="editorial" id="new">
-          <div className="editorial-photo">
-            <div className="portrait-shape"><span className="eye"></span><span className="brow"></span><span className="lips-art"></span></div>
-            <p>COLOUR<br/>LOOK 02</p>
-          </div>
-          <div className="editorial-copy">
-            <p className="eyebrow">The colour story</p>
-            <h2>Your face is<br/><em>the canvas.</em></h2>
-            <p>There are no wrong shades, no reserved looks, no rules. Layer textures, blur the edges, and wear colour exactly the way you want to.</p>
-            <a className="button button-light" href="#shop">Explore colour <span>↗</span></a>
-            <div className="quote">“Beauty should feel like freedom.”<span>— The Veloura philosophy</span></div>
+        <section className="campaign-edit" id="new" aria-labelledby="campaign-title">
+          <header className="campaign-heading">
+            <div><p className="eyebrow">Real looks · New arrivals</p><h2 id="campaign-title">Wear what’s <em>new.</em></h2></div>
+            <p>Three effortless looks, paired with this season’s most-wanted beauty.</p>
+          </header>
+          <div className="campaign-grid">
+            <article className="campaign-card campaign-rose">
+              <Image src="/assets/campaign/chanel-glass-lip-look.png" alt="Model wearing a glossy rose lip and holding Chanel Rouge Coco Hydra Gloss" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <div className="campaign-copy">
+                <p className="campaign-number">Look 01 · Lips</p>
+                <h3>Glass-lip glow</h3>
+                <p>CHANEL Rouge Coco Hydra Gloss</p>
+                <span>Hydrating shine in one swipe.</span>
+                <a href="#product-chanel-gloss">Shop the gloss <b>↗</b></a>
+              </div>
+            </article>
+            <article className="campaign-card campaign-mint">
+              <Image src="/assets/campaign/givenchy-soft-focus-look.png" alt="Model with a luminous soft-focus complexion beside Givenchy Prisme Libre Serum Primer" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <div className="campaign-copy">
+                <p className="campaign-number">Look 02 · Complexion</p>
+                <h3>Soft-focus skin</h3>
+                <p>GIVENCHY Prisme Libre Serum Primer</p>
+                <span>Correct. Blur. Glow.</span>
+                <a href="#product-givenchy-primer">Shop the primer <b>↗</b></a>
+              </div>
+            </article>
+            <article className="campaign-card campaign-gold">
+              <Image src="/assets/campaign/lancome-fresh-cheek-look.png" alt="Model in a white suit with a fresh rosy glow beside Lancôme Juicy Tubes Cheeks" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <div className="campaign-copy">
+                <p className="campaign-number">Look 03 · Cheeks</p>
+                <h3>Fresh cheek energy</h3>
+                <p>LANCÔME Skin Idôle Juicy Tubes Cheeks</p>
+                <span>Tap on. Blend out. Glow.</span>
+                <a href="#product-lancome-cheeks">Shop the glow <b>↗</b></a>
+              </div>
+            </article>
           </div>
         </section>
 

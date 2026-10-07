@@ -78,6 +78,7 @@ function ProductCarousel({ product }: Readonly<{ product: Product }>) {
 function ProductCard({ product, onOpen }: Readonly<{ product: Product; onOpen: (product: Product) => void }>) {
   return (
     <article
+      id={product.id === "chanel-hydra-gloss" ? "product-chanel-gloss" : product.id === "givenchy-prisme-libre" ? "product-givenchy-primer" : product.id === "lancome-juicy-tubes-cheeks" ? "product-lancome-cheeks" : undefined}
       className="product-card"
       onClick={() => onOpen(product)}
       onKeyDown={(event) => {
