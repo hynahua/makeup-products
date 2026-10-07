@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/asset-path";
+
 export type ProductCategory = "face" | "lips";
 
 export interface ProductImage {
@@ -19,7 +21,7 @@ export interface Product {
   images: ProductImage[];
 }
 
-export const products: Product[] = [
+const productData: Product[] = [
   {
     id: "chanel-hydra-gloss",
     category: "lips",
@@ -123,3 +125,11 @@ export const products: Product[] = [
     ],
   },
 ];
+
+export const products: Product[] = productData.map((product) => ({
+  ...product,
+  images: product.images.map((image) => ({
+    ...image,
+    src: assetPath(image.src),
+  })),
+}));

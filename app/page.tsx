@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Newsletter } from "@/components/newsletter";
 import { ProductCollection } from "@/components/product-collection";
 import { ShadeFinder } from "@/components/shade-finder";
+import { assetPath } from "@/lib/asset-path";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-art">
-            <Image src="/assets/products/hero-luxury-edit-v2.png" alt="Six new-season luxury makeup products from Chanel, YSL, Dior, Guerlain, Givenchy and Lancôme" fill priority sizes="(max-width: 900px) 100vw, 52vw" />
+            <Image src={assetPath("/assets/products/hero-luxury-edit-v2.png")} alt="Six new-season luxury makeup products from Chanel, YSL, Dior, Guerlain, Givenchy and Lancôme" fill priority sizes="(max-width: 900px) 100vw, 52vw" />
             <div className="hero-note">01 — 06<br/><span>THE NEW EDIT</span></div>
           </div>
           <a className="scroll-cue" href="#shop">Scroll to discover <span>↓</span></a>
@@ -40,7 +41,7 @@ export default function Home() {
           </header>
           <div className="campaign-grid">
             <article className="campaign-card campaign-rose">
-              <Image src="/assets/campaign/chanel-glass-lip-look.png" alt="Model wearing a glossy rose lip and holding Chanel Rouge Coco Hydra Gloss" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/chanel-glass-lip-look.png")} alt="Model wearing a glossy rose lip and holding Chanel Rouge Coco Hydra Gloss" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 01 · Lips</p>
                 <h3>Glass-lip glow</h3>
@@ -50,7 +51,7 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-mint">
-              <Image src="/assets/campaign/givenchy-soft-focus-look.png" alt="Model with a luminous soft-focus complexion beside Givenchy Prisme Libre Serum Primer" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/givenchy-soft-focus-look.png")} alt="Model with a luminous soft-focus complexion beside Givenchy Prisme Libre Serum Primer" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 02 · Complexion</p>
                 <h3>Soft-focus skin</h3>
@@ -60,7 +61,7 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-gold">
-              <Image src="/assets/campaign/lancome-fresh-cheek-look.png" alt="Model in a white suit with a fresh rosy glow beside Lancôme Juicy Tubes Cheeks" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/lancome-fresh-cheek-look.png")} alt="Model in a white suit with a fresh rosy glow beside Lancôme Juicy Tubes Cheeks" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 03 · Cheeks</p>
                 <h3>Fresh cheek energy</h3>
@@ -83,7 +84,7 @@ export default function Home() {
 
         <section className="store-location" id="location" aria-labelledby="location-title">
           <div className="location-map">
-            <Image src="/assets/store/veloura-collins-street-map.png" alt="Illustrated map showing Veloura at 101 Collins Street near Exhibition Street and Treasury Gardens in Melbourne" fill sizes="(max-width: 900px) 100vw, 68vw" />
+            <Image src={assetPath("/assets/store/veloura-collins-street-map.png")} alt="Illustrated map showing Veloura at 101 Collins Street near Exhibition Street and Treasury Gardens in Melbourne" fill sizes="(max-width: 900px) 100vw, 68vw" />
             <span className="map-edition">Melbourne · Boutique No. 01</span>
           </div>
           <div className="location-copy">
