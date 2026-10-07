@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Veloura Beauty — expressive colour, skin-loving formulas, and everyday makeup essentials.">
+  <title>Veloura Beauty — Makeup, made personal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over $60 <span aria-hidden="true">·</span> Free returns</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Veloura home">VELOURA</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#new">New in</a><a href="#routine">Routine</a><a href="#about">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-button" aria-label="Search products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      </button>
+      <button class="bag-button" aria-label="Shopping bag">
+        Bag <span class="bag-count">0</span>
+      </button>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">The colour edit · 2026</p>
+        <h1 id="hero-title">Makeup,<br><em>made personal.</em></h1>
+        <p class="hero-text">High-impact colour meets comfortable, skin-loving formulas. Created for real routines, every mood, and every version of you.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#shop">Shop the collection <span>↗</span></a>
+          <button class="text-link open-finder">Find your shade <span>→</span></button>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Sculptural arrangement of Veloura lipstick, foundation, and blush products">
+        <div class="sun-disc"></div>
+        <div class="hero-note">01 — 04<br><span>THE ESSENTIALS</span></div>
+        <div class="product-shape foundation">
+          <span class="cap"></span><span class="bottle-label">VELOURA<small>SECOND SKIN</small></span>
+        </div>
+        <div class="product-shape lipstick">
+          <span class="lip-colour"></span><span class="lip-case"><b>V</b></span>
+        </div>
+        <div class="product-shape compact"><span>V</span></div>
+        <div class="shade-swipe"></div>
+        <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+      </div>
+      <a class="scroll-cue" href="#shop">Scroll to discover <span>↓</span></a>
+    </section>
+
+    <section class="marquee" aria-label="Brand values">
+      <div>VEGAN FORMULAS <span>✦</span> EXPRESSION WITHOUT RULES <span>✦</span> CRUELTY FREE <span>✦</span> MADE TO MOVE WITH YOU <span>✦</span></div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Curated for you</p><h2 id="shop-title">Meet the icons</h2></div>
+        <p>Four essentials. Endless possibilities. Build a look that feels unmistakably yours.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="face">Face</button>
+        <button class="filter" data-filter="lips">Lips</button>
+        <button class="filter" data-filter="eyes">Eyes</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="face" data-name="Second Skin Tint" data-price="$42" data-description="A breathable, buildable tint with a natural satin finish." data-colour="#d6a07c">
+          <div class="product-visual visual-sand">
+            <span class="badge">Bestseller</span><button class="heart" aria-label="Save Second Skin Tint">♡</button>
+            <div class="mini-product bottle"><i></i><b>V</b><small>SECOND SKIN</small></div>
+            <button class="quick-add">Quick add</button>
+          </div>
+          <div class="product-info"><div><h3>Second Skin Tint</h3><p>12 flexible shades</p></div><strong>$42</strong></div>
+        </article>
+        <article class="product-card" data-category="lips" data-name="Soft Focus Lip" data-price="$28" data-description="A soft-matte lipstick with diffused colour and all-day comfort." data-colour="#9f2f36">
+          <div class="product-visual visual-rose">
+            <span class="badge">New</span><button class="heart" aria-label="Save Soft Focus Lip">♡</button>
+            <div class="mini-product lip"><i></i><b>V</b></div>
+            <button class="quick-add">Quick add</button>
+          </div>
+          <div class="product-info"><div><h3>Soft Focus Lip</h3><p>8 statement shades</p></div><strong>$28</strong></div>
+        </article>
+        <article class="product-card" data-category="face" data-name="Cloud Cheek" data-price="$34" data-description="A silky cream blush that melts into skin for a fresh flush." data-colour="#d47271">
+          <div class="product-visual visual-pink">
+            <button class="heart" aria-label="Save Cloud Cheek">♡</button>
+            <div class="mini-product powder"><i>V</i></div>
+            <button class="quick-add">Quick add</button>
+          </div>
+          <div class="product-info"><div><h3>Cloud Cheek</h3><p>6 soft-flush shades</p></div><strong>$34</strong></div>
+        </article>
+        <article class="product-card" data-category="eyes" data-name="Infinite Lash" data-price="$30" data-description="A clean-lift mascara for weightless length and defined volume." data-colour="#20201e">
+          <div class="product-visual visual-blue">
+            <button class="heart" aria-label="Save Infinite Lash">♡</button>
+            <div class="mini-product mascara"><i></i><b>VELOURA</b></div>
+            <button class="quick-add">Quick add</button>
+          </div>
+          <div class="product-info"><div><h3>Infinite Lash</h3><p>Clean lift mascara</p></div><strong>$30</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial" id="new">
+      <div class="editorial-photo">
+        <div class="portrait-shape"><span class="eye"></span><span class="brow"></span><span class="lips-art"></span></div>
+        <p>COLOUR<br>LOOK 02</p>
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow">The colour story</p>
+        <h2>Your face is<br><em>the canvas.</em></h2>
+        <p>There are no wrong shades, no reserved looks, no rules. Layer textures, blur the edges, and wear colour exactly the way you want to.</p>
+        <a class="button button-light" href="#shop">Explore colour <span>↗</span></a>
+        <div class="quote">“Beauty should feel like freedom.”<span>— The Veloura philosophy</span></div>
+      </div>
+    </section>
+
+    <section class="routine" id="routine" aria-labelledby="routine-title">
+      <div class="routine-intro"><p class="eyebrow">Three steps. Five minutes.</p><h2 id="routine-title">The everyday<br><em>edit.</em></h2></div>
+      <ol class="steps">
+        <li><span>01</span><div><h3>Even the canvas</h3><p>Blend Second Skin Tint from the centre of the face outwards.</p></div><b>2 min</b></li>
+        <li><span>02</span><div><h3>Add a little life</h3><p>Tap Cloud Cheek onto the apples and sweep toward the temples.</p></div><b>1 min</b></li>
+        <li><span>03</span><div><h3>Make it yours</h3><p>Finish with Infinite Lash and a blurred layer of Soft Focus Lip.</p></div><b>2 min</b></li>
+      </ol>
+    </section>
+
+    <section class="newsletter" id="about">
+      <p class="eyebrow">A note from us</p>
+      <h2>Stay close to<br><em>what’s beautiful.</em></h2>
+      <p>New shades, thoughtful rituals, and first access—sent occasionally.</p>
+      <form class="signup-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Email address" required><button type="submit">Join us <span>→</span></button></form>
+      <p class="form-note" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top">VELOURA</a><p>Makeup for every version of you.</p><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Contact</a></div><small>© 2026 Veloura Beauty</small></footer>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <button class="modal-close" aria-label="Close">×</button>
+    <div class="modal-swatch"></div>
+    <div><p class="eyebrow">Your selected essential</p><h2 id="modal-title"></h2><p class="modal-description"></p><strong class="modal-price"></strong><button class="button button-dark add-to-bag">Add to bag</button></div>
+  </div>
+  <div class="overlay" hidden></div>
+  <div class="toast" role="status" aria-live="polite">Added to your bag</div>
+  <script src="script.js"></script>
+</body>
+</html>
