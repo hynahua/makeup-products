@@ -51,23 +51,23 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-mint">
-              <Image src={assetPath("/assets/campaign/veloura-user-snow-blush-look.webp")} alt="Model in a black long-sleeve top wearing a cool rosy blush beside an ornate compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-highlight-look.webp")} alt="Model in a black long-sleeve top wearing a pearly highlight beside an ornate highlighter compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
-                <p className="campaign-number">Look 02 · Cheeks</p>
-                <h3>Snow-soft flush</h3>
-                <p>FLOWER KNOWS Snow Ballet Air Blush</p>
-                <span>Silky colour in a collectible compact.</span>
-                <a href="#product-flower-knows-snow-ballet-blush">Shop the blush <b>↗</b></a>
+                <p className="campaign-number">Look 02 · Glow</p>
+                <h3>Glass-skin light</h3>
+                <p>JOOCYEE AURA Glazed Highlighter</p>
+                <span>Pearlescent light with a dimensional finish.</span>
+                <a href="#product-joocyee-aura-blush-highlighter">Shop the highlighter <b>↗</b></a>
               </div>
             </article>
             <article className="campaign-card campaign-gold">
-              <Image src={assetPath("/assets/campaign/veloura-soft-flush-look.webp")} alt="Model in a teal top wearing a fresh rosy glow beside a coral cream blush compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-eye-look.webp")} alt="Model in a teal top wearing warm taupe-coral eye colour beside an open cream shadow compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
-                <p className="campaign-number">Look 03 · Cheeks</p>
-                <h3>Fresh cheek energy</h3>
+                <p className="campaign-number">Look 03 · Eyes</p>
+                <h3>Soft-focus definition</h3>
                 <p>RED CHAMBER HARUKI Multi-Purpose Cream</p>
-                <span>Eyes, cheeks and lips in one.</span>
-                <a href="#product-red-chamber-haruki-cream">Shop the cream <b>↗</b></a>
+                <span>Blendable cream colour swept across the lids.</span>
+                <a href="#product-red-chamber-haruki-cream">Shop the eye colour <b>↗</b></a>
               </div>
             </article>
           </div>

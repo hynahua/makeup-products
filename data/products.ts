@@ -1,6 +1,6 @@
 import { assetPath } from "@/lib/asset-path";
 
-export type ProductCategory = "face" | "lips";
+export type ProductCategory = "face" | "lips" | "eyes";
 
 export interface ProductImage {
   src: string;
@@ -115,7 +115,7 @@ const productData: Product[] = [
   },
   {
     id: "red-chamber-haruki-cream",
-    category: "face",
+    category: "eyes",
     brand: "RED CHAMBER",
     name: "HARUKI Multi-Purpose Cream",
     detail: "Eyes, cheeks and lips · 1.5–2 g",

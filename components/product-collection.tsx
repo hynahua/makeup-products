@@ -156,6 +156,7 @@ export function ProductCollection() {
     { value: "all", label: "All" },
     { value: "face", label: "Face" },
     { value: "lips", label: "Lips" },
+    { value: "eyes", label: "Eyes" },
   ];
   const visibleProducts = filter === "all" ? products : products.filter((product) => product.category === filter);
 
