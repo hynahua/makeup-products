@@ -6,8 +6,8 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", display
 const italiana = Italiana({ weight: "400", subsets: ["latin"], variable: "--font-italiana", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Veloura Beauty — Makeup, made personal",
-  description: "Veloura Beauty — expressive colour, skin-loving formulas, and everyday makeup essentials.",
+  title: "Veloura Beauty — Chinese beauty, curated for Australia",
+  description: "Discover Flower Knows, FLORTTE, JOOCYEE, Judydoll, INTO YOU and RED CHAMBER in Veloura's Australian C-beauty edit.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

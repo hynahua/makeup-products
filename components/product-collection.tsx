@@ -73,7 +73,7 @@ function ProductCarousel({ product }: Readonly<{ product: Product }>) {
 function ProductCard({ product, onOpen }: Readonly<{ product: Product; onOpen: (product: Product) => void }>) {
   return (
     <article
-      id={product.id === "chanel-hydra-gloss" ? "product-chanel-gloss" : product.id === "givenchy-prisme-libre" ? "product-givenchy-primer" : product.id === "lancome-juicy-tubes-cheeks" ? "product-lancome-cheeks" : undefined}
+      id={`product-${product.id}`}
       className="product-card"
       onClick={() => onOpen(product)}
       onKeyDown={(event) => {
@@ -162,8 +162,8 @@ export function ProductCollection() {
   return (
     <section className="shop-section" id="shop" aria-labelledby="shop-title">
       <div className="section-heading">
-        <div><p className="eyebrow">The latest arrivals</p><h2 id="shop-title">The new luxury edit</h2></div>
-        <p>Six new-season essentials from the maisons defining modern luxury beauty.</p>
+        <div><p className="eyebrow">Chinese beauty · Australia edit</p><h2 id="shop-title">Six brands to know</h2></div>
+        <p>A curated introduction to expressive C-beauty, with indicative Australian pricing from current official listings.</p>
       </div>
       <div className="filters" role="group" aria-label="Filter products">
         {filters.map((item) => (

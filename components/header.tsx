@@ -9,14 +9,14 @@ export function Header() {
 
   return (
     <>
-      <div className="announcement">Complimentary shipping on orders over $60 <span aria-hidden="true">·</span> Free returns</div>
+      <div className="announcement">Chinese beauty, curated for Australia <span aria-hidden="true">·</span> Prices shown in AUD</div>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Veloura home">VELOURA</a>
         <nav className={`desktop-nav${menuOpen ? " mobile-open" : ""}`} aria-label="Main navigation">
           <a href="#shop" onClick={() => setMenuOpen(false)}>Shop</a>
           <a href="#new" onClick={() => setMenuOpen(false)}>New in</a>
           <a href="#routine" onClick={() => setMenuOpen(false)}>Routine</a>
-          <a href="#location" onClick={() => setMenuOpen(false)}>Visit us</a>
+          <a href="#australia" onClick={() => setMenuOpen(false)}>Australia edit</a>
         </nav>
         <div className="header-actions">
           <button className="icon-button search-button" aria-label="Search products">
