@@ -61,13 +61,13 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-gold">
-              <Image src={assetPath("/assets/campaign/veloura-user-eye-look.webp")} alt="Model in a teal top wearing warm taupe-coral eye colour beside an open cream shadow compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-eyeshadow-look-v2.webp")} alt="Model in a teal top beside an ornate nine-colour neutral eyeshadow palette" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 03 · Eyes</p>
                 <h3>Soft-focus definition</h3>
-                <p>RED CHAMBER HARUKI Multi-Purpose Cream</p>
-                <span>Blendable cream colour swept across the lids.</span>
-                <a href="#product-red-chamber-haruki-cream">Shop the eye colour <b>↗</b></a>
+                <p>FLOWER KNOWS Little Angel 9-Color Palette</p>
+                <span>Nine celestial neutrals in matte and shimmer finishes.</span>
+                <a href="https://flowerknows.co/products/little-angel-9-color-eyeshadow-palette-1" target="_blank" rel="noreferrer">Shop the palette <b>↗</b></a>
               </div>
             </article>
           </div>
