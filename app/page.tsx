@@ -51,13 +51,13 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-mint">
-              <Image src={assetPath("/assets/campaign/veloura-user-highlight-look.webp")} alt="Model in a black long-sleeve top wearing a pearly highlight beside an ornate highlighter compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-rococo-blush-look-v2.webp")} alt="Model in a black long-sleeve top beside an ornate pink Flower Knows blush compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
-                <p className="campaign-number">Look 02 · Glow</p>
-                <h3>Glass-skin light</h3>
-                <p>JOOCYEE AURA Glazed Highlighter</p>
-                <span>Pearlescent light with a dimensional finish.</span>
-                <a href="#product-joocyee-aura-blush-highlighter">Shop the highlighter <b>↗</b></a>
+                <p className="campaign-number">Look 02 · Cheeks</p>
+                <h3>Petal-soft flush</h3>
+                <p>FLOWER KNOWS Strawberry Rococo Embossed Blush</p>
+                <span>Buildable petal-pink colour with an airbrushed finish.</span>
+                <a href="https://flowerknows.co/products/strawberry-rococo-embossed-blush-usa" target="_blank" rel="noreferrer">Shop the blush <b>↗</b></a>
               </div>
             </article>
             <article className="campaign-card campaign-gold">
