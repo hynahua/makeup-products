@@ -12,6 +12,7 @@ function ProductCarousel({ product }: Readonly<{ product: Product }>) {
   const [saved, setSaved] = useState(false);
   const { addToBag } = useCart();
   const slideCount = product.images.length;
+  const activeImage = product.images[activeIndex];
 
   const show = (nextIndex: number) => {
     setActiveIndex((nextIndex + slideCount) % slideCount);
@@ -46,16 +47,10 @@ function ProductCarousel({ product }: Readonly<{ product: Product }>) {
         {saved ? "♥" : "♡"}
       </button>
       <div className="carousel-track">
-        {product.images.map((image, index) => (
-          <figure
-            className={`carousel-slide${index === activeIndex ? " active" : ""}`}
-            aria-hidden={index !== activeIndex}
-            key={image.src}
-          >
-            <Image src={image.src} alt={image.alt} fill sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw" />
-            <figcaption>{image.label}</figcaption>
-          </figure>
-        ))}
+        <figure className="carousel-slide active" key={activeImage.src}>
+          <Image src={activeImage.src} alt={activeImage.alt} fill sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw" />
+          <figcaption>{activeImage.label}</figcaption>
+        </figure>
       </div>
       <button className="carousel-arrow prev" aria-label="Previous image" onClick={(event) => { event.stopPropagation(); show(activeIndex - 1); }}>←</button>
       <button className="carousel-arrow next" aria-label="Next image" onClick={(event) => { event.stopPropagation(); show(activeIndex + 1); }}>→</button>

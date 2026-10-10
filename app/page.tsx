@@ -22,7 +22,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-art">
-            <Image src={assetPath("/assets/products/hero-luxury-edit-v2.webp")} alt="Six new-season luxury makeup products from Chanel, YSL, Dior, Guerlain, Givenchy and Lancôme" fill priority sizes="(max-width: 900px) 100vw, 52vw" />
+            <Image src={assetPath("/assets/products/hero-luxury-edit-v2.webp")} alt="Six new-season luxury makeup products from Chanel, YSL, Dior, Guerlain, Givenchy and Lancôme" fill preload sizes="(max-width: 900px) 100vw, 52vw" />
             <div className="hero-note">01 — 06<br/><span>THE NEW EDIT</span></div>
           </div>
           <a className="scroll-cue" href="#shop">Scroll to discover <span>↓</span></a>
@@ -61,13 +61,13 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-gold">
-              <Image src={assetPath("/assets/campaign/lancome-fresh-cheek-look.webp")} alt="Model in a white suit with a fresh rosy glow beside Lancôme Juicy Tubes Cheeks" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-soft-flush-look.webp")} alt="Model in a teal top wearing a fresh rosy glow beside a coral cream blush compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 03 · Cheeks</p>
                 <h3>Fresh cheek energy</h3>
-                <p>LANCÔME Skin Idôle Juicy Tubes Cheeks</p>
+                <p>VELOURA Soft Flush Cream Blush</p>
                 <span>Tap on. Blend out. Glow.</span>
-                <a href="#product-lancome-cheeks">Shop the glow <b>↗</b></a>
+                <a href="#shop">Explore cheek colour <b>↗</b></a>
               </div>
             </article>
           </div>
