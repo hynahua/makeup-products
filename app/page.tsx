@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-mint">
-              <Image src={assetPath("/assets/campaign/veloura-user-rococo-blush-look-v2.webp")} alt="Model in a black long-sleeve top beside an ornate pink Flower Knows blush compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-snow-blush-look.webp")} alt="Model in a black long-sleeve top beside an ornate pink Flower Knows blush compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 02 · Cheeks</p>
                 <h3>Petal-soft flush</h3>
