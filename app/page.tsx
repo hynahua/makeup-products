@@ -41,7 +41,7 @@ export default function Home() {
           </header>
           <div className="campaign-grid">
             <article className="campaign-card campaign-rose">
-              <Image src={assetPath("/assets/products/chinese-edit/judydoll-2.webp")} alt="Model wearing Judydoll PDRN Stay Shine Lipstick" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-lip-look.webp")} alt="Model in a teal top wearing a glossy rose lip beside a pink lipstick" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 01 · Lips</p>
                 <h3>Soft-tint shine</h3>
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </article>
             <article className="campaign-card campaign-mint">
-              <Image src={assetPath("/assets/products/chinese-edit/flower-2.webp")} alt="Flower Knows Snow Ballet Air Blush compacts in a winter display" fill sizes="(max-width: 720px) 100vw, 33vw" />
+              <Image src={assetPath("/assets/campaign/veloura-user-snow-blush-look.webp")} alt="Model in a teal top wearing a cool rosy blush beside an ornate pink compact" fill sizes="(max-width: 720px) 100vw, 33vw" />
               <div className="campaign-copy">
                 <p className="campaign-number">Look 02 · Cheeks</p>
                 <h3>Snow-soft flush</h3>

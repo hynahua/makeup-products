@@ -57,8 +57,8 @@ const productData: Product[] = [
       "A translucent, moisturising gloss serum with a curved applicator designed to smooth the look of lip lines.",
     colour: "#f2b8c2",
     images: [
-      image("flortte", 1, "FLORTTE I Am Super Beauty Lip Gloss Serum in Orange Soda", "On lips"),
       image("flortte", 2, "FLORTTE I Am Super Beauty Lip Gloss Serum tubes and swatches", "Formula and finish"),
+      image("flortte", 1, "FLORTTE I Am Super Beauty Lip Gloss Serum in Orange Soda", "On lips"),
       image("flortte", 3, "FLORTTE I Am Super Beauty Lip Gloss Serum shade collection", "Shade range"),
     ],
   },
@@ -74,9 +74,9 @@ const productData: Product[] = [
       "A silky baked blush and highlighter collection that creates a smooth, dimensional glow with comfortable wear.",
     colour: "#d9c8df",
     images: [
+      image("joocyee", 3, "JOOCYEE AURA Glazed Blush and Highlighter compacts", "The compacts"),
       image("joocyee", 1, "JOOCYEE AURA blush swatches in coral, iris and pink", "Blush swatches"),
       image("joocyee", 2, "JOOCYEE AURA highlighter swatches in cool luminous shades", "Glow swatches"),
-      image("joocyee", 3, "JOOCYEE AURA Glazed Blush and Highlighter compacts", "The compacts"),
     ],
   },
   {
@@ -108,8 +108,8 @@ const productData: Product[] = [
       "A lightweight water-gloss tint with camellia extract, a drop-shaped applicator and a fresh satin-like shine.",
     colour: "#f5c1c8",
     images: [
-      image("intoyou", 1, "INTO YOU Water Coating Lip Tint in CT01 Lilac Veil", "Lilac Veil"),
       image("intoyou", 2, "INTO YOU Water Coating Lip Tint tube and applicator", "The applicator"),
+      image("intoyou", 1, "INTO YOU Water Coating Lip Tint in CT01 Lilac Veil", "Lilac Veil"),
       image("intoyou", 3, "Model holding INTO YOU Water Coating Lip Tint", "Campaign look"),
     ],
   },
